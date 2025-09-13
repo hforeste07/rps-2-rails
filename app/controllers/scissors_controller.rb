@@ -4,11 +4,11 @@ class ScissorsController < ApplicationController
     @comp_move = ["rock", "paper", "scissors"].sample
 
     if @comp_move == "scissors"
-      @outcome = "It's a tie!"
+      @outcome = "We tied!"
     elsif @comp_move == "rock"
-      @outcome = "You lose!"
+      @outcome = "We lose!"
     else
-      @outcome = "You win!"
+      @outcome = "We win!"
     end
 
     render({ :template => "game_templates/play_scissors" })
