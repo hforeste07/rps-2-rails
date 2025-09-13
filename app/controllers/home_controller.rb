@@ -1,5 +1,5 @@
 class Home < ApplicationController
   def welcome
-    render({ :template => "homepage.html" })
+    render({ :template => "views/homepage" })
   end
 end
