@@ -6,7 +6,7 @@ class RockController < ApplicationController
     if @comp_move == "rock"
       @outcome = "We tied!"
     elsif @comp_move == "paper"
-      @outcome = "We lose!"
+      @outcome = "We lost!"
     else
       @outcome = "We win!"
     end

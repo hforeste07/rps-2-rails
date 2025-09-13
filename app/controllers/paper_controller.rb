@@ -6,7 +6,7 @@ class PaperController < ApplicationController
     if @comp_move == "paper"
       @outcome = "We tied!"
     elsif @comp_move == "scissors"
-      @outcome = "We lose!"
+      @outcome = "We lost!"
     else
       @outcome = "We win!"
     end

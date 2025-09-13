@@ -6,7 +6,7 @@ class ScissorsController < ApplicationController
     if @comp_move == "scissors"
       @outcome = "We tied!"
     elsif @comp_move == "rock"
-      @outcome = "We lose!"
+      @outcome = "We lost!"
     else
       @outcome = "We win!"
     end
