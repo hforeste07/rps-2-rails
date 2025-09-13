@@ -11,7 +11,7 @@ class MoveController < ApplicationController
       @outcome = "You win!"
     end
 
-    render("move_templates")
+    render({ :results => "/views/layouts/move_templates"} )
   end
 
   def scissors
@@ -26,7 +26,7 @@ class MoveController < ApplicationController
       @outcome = "It's a tie!"
     end
 
-    render("move_templates")
+    render(:result => "move_templates")
   end
 
   def paper
